@@ -1,7 +1,7 @@
 "use strict";
 
 
-let numberall = +prompt(`Введите номер билета:`);
+let numberall = +prompt(`Введите номер 6 цифр Билета. И узнай счастливый ли он:`);
 let number6 = numberall % 10;
 let number5 = Math.floor(numberall / 10) % 10;
 let number4 = Math.floor(numberall / 100) % 10;
