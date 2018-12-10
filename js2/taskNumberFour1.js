@@ -1,10 +1,11 @@
 "use strict";
-let a = prompt("Выберите значение от а до 15 кторое вам вернуть");
+
+let z = prompt("Выберите значение от а до 15 кторое вам вернуть");
 /**
  * Вункция выбора значения.
  */
-function definiteNumbers(a) {
-    switch (a) {
+function definiteNumbers(z) {
+    switch (z) {
         case a:
             return;
         case 1:
@@ -40,4 +41,4 @@ function definiteNumbers(a) {
 
     }
 }
-alert(`Вы выбрали : ${a}`);
+alert(`Вы выбрали : ${z}`);

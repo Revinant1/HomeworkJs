@@ -1,4 +1,5 @@
 "use strict";
+
 let vol = +prompt("Введите Число");
 let pow = +prompt("Введите значение степени");
 

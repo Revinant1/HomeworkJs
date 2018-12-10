@@ -1,18 +1,17 @@
 "use strict";
 
-
 /**
  * Создаю переменую  .
  * @function mathOperation Вызываю в переменной функция с нужным действием.
  */
-const difference1 = (mathOperation(12,8,"difference"));
-console.log(`Я получил вычитание: ${difference1}`);
-const composition1 = mathOperation(11,10,"composition");
-console.log(`Я получил умножение: ${composition1}`);
-const result1 = mathOperation(7,2,"result");
-console.log(`Я получил сложение: ${result1}`);
-const quotient1 = mathOperation(9,3,"quotient");
-console.log(`Я получил деление: ${quotient1}`);
+const difference5 = (mathOperation(12,8,"difference"));
+console.log(`Я получил вычитание: ${difference5}`);
+const composition5 = mathOperation(11,10,"composition");
+console.log(`Я получил умножение: ${composition5}`);
+const result5 = mathOperation(7,2,"result");
+console.log(`Я получил сложение: ${result5}`);
+const quotient5 = mathOperation(9,3,"quotient");
+console.log(`Я получил деление: ${quotient5}`);
 /**
  * @function result сложения.
  */
