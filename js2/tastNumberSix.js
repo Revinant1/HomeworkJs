@@ -6,7 +6,7 @@ let lastDigit1 = depositAmount % 100;
 /**
  * @function defineDeclination выбора склонения слова рубль и возврощения слова в результат.
  */
-function defineDeclination(lastDigit){
+function defineDeclination(lastDigit) {
     switch (lastDigit) {
         case 1:
         return"рубль";
@@ -30,6 +30,7 @@ function defineDeclination(lastDigit){
         case 18:
         case 19:
         return "рублей";
+
     }
 }
 /**
@@ -52,8 +53,8 @@ function defineDeclination1(lastDigit1){
 /**
  * Условие при каких обстоятелтствах делать выбор
  */
-if (lastDigit1 <= 11 || lastDigit1 >= 19) {
-    alert(`Ваш счет пополнен на : ${depositAmount + defineDeclination(lastDigit1)}`);
+if (lastDigit1 <= 11 && lastDigit1 >= 19) {
+    alert(`Ваш счет пополнен на : ${depositAmount + " " + defineDeclination1(lastDigit1)}`);
 }else{
-    alert(`Ваш счет пополнен на : ${depositAmount + defineDeclination1(lastDigit)}`);
+    alert(`Ваш счет пополнен на : ${depositAmount + " " + defineDeclination(lastDigit)}`);
 }
