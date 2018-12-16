@@ -38,7 +38,10 @@ function definiteNumbers(z) {
             return;
         case 15:
             return;
+            break;
+        default:
+            alert("Такое значение отсутствует")
 
     }
 }
-alert(`Вы выбрали : ${z}`);
+alert(`Вы выбрали : ${definiteNumbers(z)}`);
