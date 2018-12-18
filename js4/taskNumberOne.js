@@ -9,7 +9,7 @@ let numObj = numToObj();
  */
 function numToObj() {
     let inputNumber = +prompt('Введите число от 0 до 999');
-    let arrNumber = inputNumber.split('');
+    let arrNumber = inputNumber + "";
     let objNumber = {};
 
     if (arrNumber.length == 3) {
