@@ -8,7 +8,7 @@ let numObj = numToObj();
  * @numToObj - функция запрашивает числа от 0 - 999 чесла и определяет сотни десятки и еденици
  */
 function numToObj() {
-    let inputNumber = prompt('Введите число от 0 до 999');
+    let inputNumber = +prompt('Введите число от 0 до 999');
     let arrNumber = inputNumber.split('');
     let objNumber = {};
 
