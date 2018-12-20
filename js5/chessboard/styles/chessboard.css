@@ -1,0 +1,51 @@
+*{
+    margin: 0 auto;
+}
+.chessboard{
+    border: solid 2px;
+    margin-top: 40px;
+    background: beige;
+    width: 820px;
+    height: 820px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cellfield{
+    border: solid 2px;
+    width: 720px;
+    height: 696px;
+    background: gray;
+    position: absolute;
+    margin-top: 60px;
+}
+.cellfield span{
+    display: inline-block;
+    width: 90px;
+    height: 87px;
+}
+.cellfield div{
+    height: 87px;
+    background: black;
+}
+.chessboard li{
+    position: relative;
+    left: -378px;
+    list-style-type: decimal;
+    margin-top: 70px;
+}
+.cellfield div:nth-child(odd) span:nth-child(even),
+.cellfield div:nth-child(even) span:nth-child(odd){
+    background: black;
+}
+.cellfield div:nth-child(odd) span:nth-child(even),
+.cellfield div:nth-child(even) span:nth-child(odd){
+    background: white;
+}
+.letters{
+    position: relative;
+    top: 24px;
+    margin-left: 85px;
+    width: 720px;
+    letter-spacing: 81px;
+}
