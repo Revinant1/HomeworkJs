@@ -1,0 +1,28 @@
+*{
+    margin: 0 auto;
+}
+#basketBox{
+    background: beige;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 650px;
+    height: 468px;
+    align-items: center;
+}
+#basketBox span{
+    background: darkorange;
+    margin: 50px 0 50px 0;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    height: 64px;
+}
+.item-cart{
+    background: darkcyan;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
