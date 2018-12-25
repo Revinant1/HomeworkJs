@@ -6,9 +6,9 @@ a {
 }
 .wrap_cotalog{
     margin-top: 100px;
-
+    display: flex;
 }
-.product_list{
+.product_list,.basket_list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ a {
     flex-direction: column;
     width: 246px;
     height: 440px;
-    position: relative;
+
 
 }
 .product_img{
@@ -54,7 +54,16 @@ a {
     width: 1200px;
     height: 1000px;
     z-index: 1;
-    position: absolute;
-
-
+    position: fixed;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto;
+    left: 196px;
+    top: 18px;
+}
+.model_window button{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
 }

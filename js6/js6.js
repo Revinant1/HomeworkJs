@@ -68,7 +68,7 @@ $wrapCotalog.appendChild($basketList);
         $productImgWrap.addEventListener("click", handleOpenModal);
 
         function handleOpenModal(event) {
-            $modelWindow.style.display = "block";
+            $modelWindow.style.display = "flex";
 
         }
 
@@ -130,10 +130,6 @@ $wrapCotalog.appendChild($basketList);
     }function handleButtonBuy(event) {
         let $bs = this.parentNode.cloneNode(true);
         $basketList.appendChild($bs);
-        let $bascetSumm = document.createElement("h1");
-        $bascetSumm.id = "bascet_summ";
-        $basketList.appendChild($bascetSumm);
-
 
     }
 
