@@ -24,7 +24,7 @@ function Container(id, className, tagName) {
 Container.prototype.remove = function () {
     var element = this.getElement();
     if(element){
-        element.remove(this);
+        element.parentNode.removeChild(element);
         this.setElement(null);
     }
     return false;
@@ -87,23 +87,8 @@ MenuItem.prototype.render = function() {
     return container;
 }
 
-function SubMenuItem(className, link, title){
-    MenuItem.call(this, "", className, 'li' );
-    this.link = link;
-    this.title = title;
-}
-SubMenuItem.prototype = Object.create(Menu.prototype);
-SubMenuItem.prototype.render = function(){
-    var container = MenuItem.prototype.render.apply(this);
 
-    var b = document.createElement('a');
-    b.textContent = this.title;
-    b.href = this.link;
 
-    container.appendChild(b);
-
-    return container;
-}
 
 var subMenu1 = new SubMenuItem("sub-menu1", "/Home1", "Home First Page");
 var subMenu2 = new SubMenuItem("sub-menu2", "/Home2", "Home Mid Page");
